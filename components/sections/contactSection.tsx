@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 // src/components/ContactSection.tsx
 
 import React from "react";
@@ -9,10 +10,10 @@ const ContactSection: React.FC = () => {
       id="contact"
       className="scroll-mt-navbar-height bg-primary-white px-4 py-16 pt-navbar-height md:px-20 md:py-24"
     >
-      <div className="mx-auto max-w-screen-lg justify-items-center gap-8 text-center ">
+      <div className="sm: mx-auto max-w-screen-lg justify-items-center gap-8 text-center ">
         {/* Right Section: Text */}
         <div className="space-y-4">
-          <h1 className="text-display-medium font-extrabold text-primary-black">
+          <h1 className="text-display-medium font-extrabold text-primary-black ">
             Let&apos;s{" "}
             <mark className="rounded bg-primary-black px-2 text-primary-white">
               talk
@@ -23,7 +24,7 @@ const ContactSection: React.FC = () => {
           <p className="text-paragraph-p2 font-light text-zinc-500">
             {contactConfig.description}
           </p>
-          <p className="pb-6 text-h4 font-semibold text-primary-black">
+          <p className="pb-6 sm:text-h4 text-[14px] font-semibold text-primary-black">
             {contactConfig.email} {/* Display the email from the config */}
           </p>
           <a
